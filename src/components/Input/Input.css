@@ -1,0 +1,4 @@
+.input-and-label{
+    display: flex;
+    flex-direction: column;
+}
