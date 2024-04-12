@@ -11,6 +11,7 @@ const Input = ({
   patternMessage,
   minLengthValue,
   lengthMessage,
+  placeholder
 }) => {
   return (
     <div className="input-and-label">
@@ -18,6 +19,7 @@ const Input = ({
         {inputName.charAt(0).toUpperCase() + inputName.slice(1)}
       </label>
       <input
+      placeholder={placeholder}
         className="input"
         id={inputName}
         type={inputType}
@@ -50,6 +52,7 @@ Input.propTypes = {
   patternMessage: PropTypes.string,
   minLengthValue: PropTypes.number,
   lengthMessage: PropTypes.string,
+  placeholder: PropTypes.string,
 };
 
 export default Input;
